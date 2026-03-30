@@ -1,0 +1,3 @@
+name: mcp-builder
+description: MCP (Model Context Protocol) server building principles. Tool design, resource patterns, best practices.
+version: "1.0"

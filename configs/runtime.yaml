@@ -1,0 +1,22 @@
+# Runtime configuration for Antigravity Kit
+
+agent_system:
+  base_path: .
+  agents_path: agents
+  skills_path: skills
+  workflows_path: workflows
+  shared_path: .shared
+  rules_path: rules
+  scripts_path: scripts
+
+routing:
+  auto_select: true
+  fallback_agent: orchestrator
+
+skills:
+  auto_load: true
+  cache: true
+
+logging:
+  level: info
+  format: json

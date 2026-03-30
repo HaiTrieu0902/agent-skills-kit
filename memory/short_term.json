@@ -1,0 +1,7 @@
+{
+  "version": "1.0",
+  "description": "Short-term agent memory — cleared between sessions",
+  "context": {},
+  "task_history": [],
+  "active_agents": []
+}

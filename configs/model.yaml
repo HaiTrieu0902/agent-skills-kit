@@ -1,0 +1,20 @@
+# Model configuration for Antigravity Kit agents
+
+defaults:
+  model: claude-sonnet-4-6
+  max_tokens: 8192
+  temperature: 0
+
+overrides:
+  orchestrator:
+    model: claude-opus-4-6
+  code-archaeologist:
+    model: claude-opus-4-6
+
+available_models:
+  - id: claude-opus-4-6
+    description: Most capable — use for complex orchestration
+  - id: claude-sonnet-4-6
+    description: Balanced — default for most agents
+  - id: claude-haiku-4-5-20251001
+    description: Fast — use for simple, high-frequency tasks

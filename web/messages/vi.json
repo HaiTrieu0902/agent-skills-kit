@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "docs": "Tài liệu",
+    "agents": "Agents",
+    "skills": "Kỹ năng",
+    "workflows": "Quy trình"
+  },
+  "home": {
+    "hero_title": "Antigravity Kit",
+    "hero_subtitle": "Bộ công cụ nâng cao AI Agent",
+    "hero_description": "19 agent chuyên biệt, 19 kỹ năng theo lĩnh vực, và 11 lệnh slash — mở rộng trợ lý lập trình AI với trí tuệ tái sử dụng.",
+    "explore_agents": "Khám phá Agents",
+    "explore_skills": "Khám phá Kỹ năng",
+    "explore_workflows": "Khám phá Quy trình",
+    "section_agents": "Agent Chuyên biệt",
+    "section_agents_desc": "Nhân vật AI được tự động định tuyến theo loại nhiệm vụ",
+    "section_skills": "Kỹ năng Tái sử dụng",
+    "section_skills_desc": "Các gói năng lực theo module, tải theo yêu cầu",
+    "section_workflows": "Lệnh Slash",
+    "section_workflows_desc": "Quy trình điều phối cho các tác vụ phức tạp"
+  },
+  "docs": {
+    "agents_title": "Agents",
+    "agents_desc": "19 agent chuyên biệt. Mỗi agent được tự động chọn dựa trên loại nhiệm vụ.",
+    "skills_title": "Kỹ năng",
+    "skills_desc": "19 gói kỹ năng theo module, tải theo yêu cầu để mở rộng năng lực agent.",
+    "workflows_title": "Quy trình",
+    "workflows_desc": "11 quy trình lệnh slash điều phối agents và kỹ năng cho các tác vụ phức tạp.",
+    "tools": "Công cụ",
+    "model": "Mô hình",
+    "skills_used": "Kỹ năng sử dụng",
+    "back_to": "Quay lại",
+    "on_this_page": "Trên trang này"
+  },
+  "common": {
+    "search_placeholder": "Tìm kiếm...",
+    "toggle_theme": "Đổi giao diện",
+    "language": "Ngôn ngữ"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "docs": "Documentation",
+    "agents": "Agents",
+    "skills": "Skills",
+    "workflows": "Workflows"
+  },
+  "home": {
+    "hero_title": "Antigravity Kit",
+    "hero_subtitle": "AI Agent Enhancement Toolkit",
+    "hero_description": "19 specialist agents, 19 domain-specific skills, and 11 slash command workflows — extending AI coding assistants with reusable intelligence.",
+    "explore_agents": "Explore Agents",
+    "explore_skills": "Explore Skills",
+    "explore_workflows": "Explore Workflows",
+    "section_agents": "Specialist Agents",
+    "section_agents_desc": "Auto-routed personas with deep domain expertise",
+    "section_skills": "Reusable Skills",
+    "section_skills_desc": "Modular capability packs loaded on demand",
+    "section_workflows": "Slash Commands",
+    "section_workflows_desc": "Orchestrated workflows for complex tasks"
+  },
+  "docs": {
+    "agents_title": "Agents",
+    "agents_desc": "19 specialist agent personas. Each agent is automatically selected based on task type.",
+    "skills_title": "Skills",
+    "skills_desc": "19 modular skill packs loaded on demand to extend agent capabilities.",
+    "workflows_title": "Workflows",
+    "workflows_desc": "11 slash command workflows that orchestrate agents and skills for complex tasks.",
+    "tools": "Tools",
+    "model": "Model",
+    "skills_used": "Skills",
+    "back_to": "Back to",
+    "on_this_page": "On this page"
+  },
+  "common": {
+    "search_placeholder": "Search...",
+    "toggle_theme": "Toggle theme",
+    "language": "Language"
+  }
+}

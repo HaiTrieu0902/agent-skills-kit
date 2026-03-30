@@ -1,0 +1,3 @@
+name: powershell-windows
+description: PowerShell Windows patterns. Critical pitfalls, operator syntax, error handling.
+version: "1.0"
