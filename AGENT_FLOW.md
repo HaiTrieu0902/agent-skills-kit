@@ -164,10 +164,6 @@ Request Domain → Agent Mapping:
 │ Database Design      │ database-architect  │ database-design          │
 │                      │                     │ prisma-expert            │
 ├──────────────────────┼─────────────────────┼──────────────────────────┤
-│ Mobile App           │ mobile-developer    │ mobile-design            │
-├──────────────────────┼─────────────────────┼──────────────────────────┤
-│ Game Development     │ game-developer      │ game-development         │
-├──────────────────────┼─────────────────────┼──────────────────────────┤
 │ DevOps/Deployment    │ devops-engineer     │ docker-expert            │
 │                      │                     │ deployment-procedures    │
 ├──────────────────────┼─────────────────────┼──────────────────────────┤

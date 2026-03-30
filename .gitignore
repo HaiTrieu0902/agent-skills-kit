@@ -1,6 +1,12 @@
-# Ignore
+# Dependencies
 node_modules/
+
+# Next.js build output
+web/.next/
+web/out/
+
+# Misc
 .temp_ag_kit/
 antigravity-doc
-tests
-others
+.DS_Store
+*.log

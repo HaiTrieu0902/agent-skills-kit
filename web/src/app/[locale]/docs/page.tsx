@@ -78,7 +78,7 @@ function DocsIndex({
     <div className="max-w-3xl">
       <h1 className="text-3xl font-bold text-[var(--foreground)] mb-2">{tn('docs')}</h1>
       <p className="text-[var(--muted-foreground)] mb-10 text-lg">
-        Browse agents, skills, and workflows for the Antigravity Kit.
+        Browse agents, skills, and workflows for the Raffles IT Kit.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">

@@ -223,7 +223,7 @@ function HomePageContent({
       {/* Footer */}
       <footer className="border-t border-[var(--border)] py-8">
         <div className="max-w-screen-xl mx-auto px-4 text-center text-sm text-[var(--muted-foreground)]">
-          <p>Antigravity Kit — AI Agent Enhancement Toolkit</p>
+          <p>Raffles IT Kit — AI Agent Enhancement Toolkit</p>
         </div>
       </footer>
     </div>

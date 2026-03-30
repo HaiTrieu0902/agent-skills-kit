@@ -1,16 +1,12 @@
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
+import { marked } from 'marked'
 
 interface Props {
   content: string
 }
 
 export default function ContentRenderer({ content }: Props) {
+  const html = marked.parse(content) as string
   return (
-    <div className="prose">
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>
-        {content}
-      </ReactMarkdown>
-    </div>
+    <div className="prose" dangerouslySetInnerHTML={{ __html: html }} />
   )
 }
