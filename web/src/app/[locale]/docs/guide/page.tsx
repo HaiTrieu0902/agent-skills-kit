@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { setRequestLocale } from 'next-intl/server'
+import { CodeBlock } from './CodeBlock'
 
 export default async function GuidePage({
   params
@@ -11,25 +12,7 @@ export default async function GuidePage({
   return <GuideContent locale={locale} />
 }
 
-function Code({ children, lang = '' }: { children: string; lang?: string }) {
-  return (
-    <div className="rounded-xl border border-[var(--card-border)] bg-[var(--card)] overflow-hidden my-4">
-      {lang && (
-        <div className="flex items-center justify-between px-4 py-2 border-b border-[var(--border)] bg-[var(--muted)]/60">
-          <div className="flex gap-1.5">
-            <span className="w-2.5 h-2.5 rounded-full bg-red-400/60" />
-            <span className="w-2.5 h-2.5 rounded-full bg-yellow-400/60" />
-            <span className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
-          </div>
-          <span className="text-xs text-[var(--muted-foreground)] font-mono">{lang}</span>
-        </div>
-      )}
-      <pre className="px-5 py-4 text-sm font-mono text-[var(--foreground)] overflow-x-auto leading-relaxed">
-        <code>{children}</code>
-      </pre>
-    </div>
-  )
-}
+const Code = CodeBlock
 
 function Badge({ color, children }: { color: 'blue' | 'green' | 'purple' | 'orange'; children: React.ReactNode }) {
   const colors = {
