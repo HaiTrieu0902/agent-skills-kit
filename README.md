@@ -202,14 +202,6 @@ workflows/
 
 ## Support This Project
 
-If this toolkit saves you time, consider supporting it:
-
-<p align="center">
-  <img src="web/public/qrvcb.jpg" alt="Donate via Vietcombank" width="200" />
-  <br />
-  <em>Scan to donate via VCB — BUI HAI TRIEU · 1017408909</em>
-</p>
-
 ---
 
 ## License
