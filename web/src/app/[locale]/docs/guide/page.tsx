@@ -126,7 +126,7 @@ function GuideContent({ locale }: { locale: string }) {
           <p className="text-[var(--muted-foreground)] mb-4 leading-relaxed">
             Run the following command inside your project root. The kit copies <strong>agents/</strong>, <strong>skills/</strong>, <strong>workflows/</strong>, <strong>configs/</strong>, <strong>prompts/</strong>, and <strong>rules/</strong> directly into your working directory.
           </p>
-          <Code lang="terminal">npx raffles-it-kit</Code>
+          <Code lang="terminal">npx create-raffles-it</Code>
           <p className="text-sm text-[var(--muted-foreground)] mt-2">
             No global install needed. Every time you run it, the latest kit is fetched from npm.
           </p>
@@ -168,7 +168,7 @@ function GuideContent({ locale }: { locale: string }) {
               <p className="text-sm text-[var(--muted-foreground)] mb-3">
                 Leave the <code className="bg-[var(--muted)] px-1 rounded text-xs">agents/</code> folder in your project root. Claude Code detects it automatically when you open the project.
               </p>
-              <Code lang="terminal">{`# After running npx raffles-it-kit, just open the project:
+              <Code lang="terminal">{`# After running npx create-raffles-it, just open the project:
 claude .`}</Code>
               <p className="text-xs text-[var(--muted-foreground)]">
                 Agents are scoped to this project only.

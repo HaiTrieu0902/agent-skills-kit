@@ -1,9 +1,9 @@
 {
-  "name": "raffles-it-kit",
-  "version": "2.0.0",
+  "name": "create-raffles-it",
+  "version": "1.0.2",
   "description": "AI Agent Enhancement Toolkit — specialist agents, skills, and workflows for Claude Code, Cursor, and Windsurf.",
   "bin": {
-    "raffles-it-kit": "./bin/index.js"
+    "create-raffles-it": "bin/index.js"
   },
   "files": [
     "agents/",
@@ -18,11 +18,15 @@
   ],
   "scripts": {
     "start": "node bin/index.js",
-    "prepublishOnly": "echo '📦 Publishing raffles-it-kit to npm...'"
+    "prepublishOnly": "npm pkg fix && echo '📦 Publishing create-raffles-it to npm...'"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "inquirer": "^8.2.6"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/HaiTrieu0902/agent-skills-kit.git"
+    "url": "git+https://github.com/HaiTrieu0902/agent-skills-kit.git"
   },
   "homepage": "https://github.com/HaiTrieu0902/agent-skills-kit#readme",
   "bugs": {

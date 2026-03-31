@@ -10,3 +10,4 @@ web/out/
 antigravity-doc
 .DS_Store
 *.log
+.npmrc
