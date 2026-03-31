@@ -17,7 +17,20 @@
     "section_skills": "Reusable Skills",
     "section_skills_desc": "Modular capability packs loaded on demand",
     "section_workflows": "Slash Commands",
-    "section_workflows_desc": "Orchestrated workflows for complex tasks"
+    "section_workflows_desc": "Orchestrated workflows for complex tasks",
+    "install_title": "Get Started in Seconds",
+    "install_desc": "Install the full kit into any project with a single command. Works with Claude Code, Cursor, and Windsurf.",
+    "install_step1": "Run the installer",
+    "install_step2": "Open your project in Claude Code, Cursor, or Windsurf",
+    "install_step3": "Agents auto-route based on task type — no configuration needed",
+    "install_manual": "Manual Install",
+    "install_manual_desc": "Or clone the repository and copy the folders you need directly into your project.",
+    "github_title": "Open Source on GitHub",
+    "github_desc": "Browse the source code, open issues, or contribute to the project.",
+    "view_source": "View on GitHub",
+    "donate_title": "Support This Project",
+    "donate_desc": "If this toolkit saves you time, consider buying me a coffee. Scan the QR code below.",
+    "donate_scan": "Scan to donate via VCB"
   },
   "docs": {
     "agents_title": "Agents",

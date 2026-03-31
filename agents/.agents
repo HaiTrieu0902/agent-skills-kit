@@ -1,0 +1,105 @@
+# .agents — Raffles IT Kit Agent Registry
+# Auto-detected by Claude Code and compatible AI editors
+# Format: https://github.com/HaiTrieu0902/agent-skills-kit
+
+version: "1.0"
+updated: "2025-03-31"
+
+# ─── Orchestration ──────────────────────────────────────────────────────────
+orchestration:
+  default_agent: orchestrator
+  routing: auto          # agents are auto-selected based on task keywords
+  fallback: orchestrator
+
+# ─── Agents ─────────────────────────────────────────────────────────────────
+agents:
+  - id: orchestrator
+    model: claude-opus-4-6
+    priority: 0
+    description: "Multi-agent coordination. Use for complex tasks spanning multiple domains."
+    triggers: [orchestrate, coordinate, multi-step, plan and execute]
+
+  - id: backend-specialist
+    model: claude-sonnet-4-6
+    description: "Node.js, Python, REST/GraphQL/tRPC APIs, serverless, edge."
+    triggers: [backend, server, api, endpoint, database, auth, middleware]
+
+  - id: frontend-specialist
+    model: claude-sonnet-4-6
+    description: "React, Next.js, Tailwind, UI/UX, state management."
+    triggers: [component, react, vue, ui, ux, css, tailwind, responsive, frontend]
+
+  - id: database-architect
+    model: claude-sonnet-4-6
+    description: "Schema design, query optimization, migrations, ORMs."
+    triggers: [database, sql, schema, migration, query, postgres, sqlite, index]
+
+  - id: debugger
+    model: claude-sonnet-4-6
+    description: "Systematic debugging and root cause analysis."
+    triggers: [bug, error, crash, not working, broken, investigate, fix]
+
+  - id: devops-engineer
+    model: claude-sonnet-4-6
+    description: "CI/CD, Docker, deployments, server management."
+    triggers: [deploy, production, server, docker, ci/cd, release, rollback]
+
+  - id: security-auditor
+    model: claude-sonnet-4-6
+    description: "OWASP, vulnerability scanning, zero-trust architecture."
+    triggers: [security, vulnerability, owasp, xss, injection, encrypt]
+
+  - id: penetration-tester
+    model: claude-sonnet-4-6
+    description: "Offensive security, red team, exploit analysis."
+    triggers: [pentest, exploit, attack, redteam, offensive, breach]
+
+  - id: test-engineer
+    model: claude-sonnet-4-6
+    description: "TDD, unit/integration/E2E testing, coverage."
+    triggers: [test, spec, coverage, jest, pytest, playwright, unit test]
+
+  - id: qa-automation-engineer
+    model: claude-sonnet-4-6
+    description: "E2E automation, Playwright/Cypress, CI pipelines."
+    triggers: [e2e, automated test, pipeline, playwright, cypress, regression]
+
+  - id: performance-optimizer
+    model: claude-sonnet-4-6
+    description: "Core Web Vitals, bundle size, runtime performance."
+    triggers: [performance, optimize, speed, slow, memory, lighthouse]
+
+  - id: explorer-agent
+    model: claude-sonnet-4-6
+    description: "Codebase discovery, architectural analysis, research."
+    triggers: [explore, audit, analyze repo, understand, map codebase]
+
+  - id: code-archaeologist
+    model: claude-opus-4-6
+    description: "Legacy code, refactoring, undocumented systems."
+    triggers: [legacy, refactor, spaghetti, reverse engineer, modernize]
+
+  - id: project-planner
+    model: claude-sonnet-4-6
+    description: "Task breakdown, dependency graphs, feature planning."
+    triggers: [plan, roadmap, breakdown, milestones, new project]
+
+  - id: product-manager
+    model: claude-sonnet-4-6
+    description: "Requirements, user stories, acceptance criteria."
+    triggers: [requirements, user story, acceptance criteria, product specs]
+
+  - id: product-owner
+    model: claude-sonnet-4-6
+    description: "Backlog, PRD, stakeholder alignment, MVP scope."
+    triggers: [backlog, MVP, PRD, stakeholder, prioritize]
+
+  - id: documentation-writer
+    model: claude-sonnet-4-6
+    description: "README, API docs, changelogs. Only when explicitly requested."
+    triggers: [write docs, README, API docs, changelog, document this]
+
+  - id: seo-specialist
+    model: claude-sonnet-4-6
+    description: "SEO audits, Core Web Vitals, AI search (GEO)."
+    triggers: [seo, meta, sitemap, core web vitals, search ranking]

@@ -1,24 +1,52 @@
 {
   "name": "raffles-it-kit",
   "version": "2.0.0",
-  "description": "AI Agent templates - Skills, Agents, and Workflows for enhanced coding assistance",
+  "description": "AI Agent Enhancement Toolkit — specialist agents, skills, and workflows for Claude Code, Cursor, and Windsurf.",
+  "bin": {
+    "raffles-it-kit": "./bin/index.js"
+  },
+  "files": [
+    "agents/",
+    "skills/",
+    "workflows/",
+    "configs/",
+    "prompts/",
+    "rules/",
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node bin/index.js",
+    "prepublishOnly": "echo '📦 Publishing raffles-it-kit to npm...'"
+  },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/HaiTrieu0902/agent-skills-kit.git"
   },
-  "homepage": "",
+  "homepage": "https://github.com/HaiTrieu0902/agent-skills-kit#readme",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/HaiTrieu0902/agent-skills-kit/issues"
   },
   "keywords": [
     "raffles",
     "claude",
+    "claude-code",
     "ai",
     "agent",
+    "llm",
+    "cursor",
+    "windsurf",
     "gemini",
     "skills",
-    "templates"
+    "workflows",
+    "templates",
+    "toolkit",
+    "coding-assistant"
   ],
   "author": "trieubh",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }

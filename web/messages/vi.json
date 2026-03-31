@@ -17,7 +17,20 @@
     "section_skills": "Kỹ năng Tái sử dụng",
     "section_skills_desc": "Các gói năng lực theo module, tải theo yêu cầu",
     "section_workflows": "Lệnh Slash",
-    "section_workflows_desc": "Quy trình điều phối cho các tác vụ phức tạp"
+    "section_workflows_desc": "Quy trình điều phối cho các tác vụ phức tạp",
+    "install_title": "Bắt đầu chỉ trong vài giây",
+    "install_desc": "Cài đặt toàn bộ kit vào bất kỳ dự án nào bằng một lệnh duy nhất. Tương thích với Claude Code, Cursor và Windsurf.",
+    "install_step1": "Chạy lệnh cài đặt",
+    "install_step2": "Mở dự án trong Claude Code, Cursor hoặc Windsurf",
+    "install_step3": "Agents tự động định tuyến theo loại nhiệm vụ — không cần cấu hình thêm",
+    "install_manual": "Cài đặt thủ công",
+    "install_manual_desc": "Hoặc clone repository và sao chép các thư mục cần thiết vào dự án của bạn.",
+    "github_title": "Mã nguồn mở trên GitHub",
+    "github_desc": "Xem mã nguồn, mở issues, hoặc đóng góp vào dự án.",
+    "view_source": "Xem trên GitHub",
+    "donate_title": "Ủng hộ dự án này",
+    "donate_desc": "Nếu bộ công cụ này giúp ích cho bạn, hãy mời tôi một ly cà phê. Quét mã QR bên dưới.",
+    "donate_scan": "Quét để chuyển khoản qua VCB"
   },
   "docs": {
     "agents_title": "Agents",
