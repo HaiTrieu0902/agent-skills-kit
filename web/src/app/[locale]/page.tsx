@@ -291,22 +291,6 @@ function HomePageContent({
               </a>
             </div>
 
-            {/* Donate / Buy Me Coffee */}
-            <div className="flex flex-col items-center text-center">
-              <h2 className="text-xl font-bold text-[var(--foreground)] mb-2">{t('donate_title')}</h2>
-              <p className="text-[var(--muted-foreground)] mb-5 text-sm">{t('donate_desc')}</p>
-              <div className="rounded-2xl border border-[var(--card-border)] bg-[var(--card)] p-4 inline-flex flex-col items-center gap-3">
-                <Image
-                  src="/qrvcb.jpg"
-                  alt="Donate QR Code"
-                  width={160}
-                  height={160}
-                  className="rounded-lg"
-                />
-                <p className="text-xs text-[var(--muted-foreground)]">{t('donate_scan')}</p>
-              </div>
-            </div>
-
           </div>
         </div>
       </section>
