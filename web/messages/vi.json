@@ -3,7 +3,8 @@
     "docs": "Tài liệu",
     "agents": "Agents",
     "skills": "Kỹ năng",
-    "workflows": "Quy trình"
+    "workflows": "Quy trình",
+    "guide": "Bắt đầu"
   },
   "home": {
     "hero_title": "Raffles IT Kit",
@@ -39,6 +40,8 @@
     "skills_desc": "19 gói kỹ năng theo module, tải theo yêu cầu để mở rộng năng lực agent.",
     "workflows_title": "Quy trình",
     "workflows_desc": "11 quy trình lệnh slash điều phối agents và kỹ năng cho các tác vụ phức tạp.",
+    "guide_title": "Bắt đầu",
+    "guide_desc": "Hướng dẫn cài đặt, kích hoạt và sử dụng kit với các ví dụ thực tế.",
     "tools": "Công cụ",
     "model": "Mô hình",
     "skills_used": "Kỹ năng sử dụng",

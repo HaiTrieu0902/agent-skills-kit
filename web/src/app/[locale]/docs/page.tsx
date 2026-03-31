@@ -77,9 +77,37 @@ function DocsIndex({
   return (
     <div className="max-w-3xl">
       <h1 className="text-3xl font-bold text-[var(--foreground)] mb-2">{tn('docs')}</h1>
-      <p className="text-[var(--muted-foreground)] mb-10 text-lg">
+      <p className="text-[var(--muted-foreground)] mb-8 text-lg">
         Browse agents, skills, and workflows for the Raffles IT Kit.
       </p>
+
+      {/* Getting Started — featured card */}
+      <Link
+        href={`/${locale}/docs/guide`}
+        className="group flex items-center gap-5 p-6 rounded-xl border-2 border-[var(--color-primary-200)] dark:border-[rgba(30,127,203,0.4)] bg-[var(--color-primary-50)] dark:bg-[rgba(30,127,203,0.07)] hover:border-[var(--color-primary-400)] hover:shadow-md transition-all mb-8"
+      >
+        <div className="w-14 h-14 rounded-xl bg-[var(--color-primary-500)] flex items-center justify-center shrink-0 text-white">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 8 16 12 12 16"/>
+            <line x1="8" y1="12" x2="16" y2="12"/>
+          </svg>
+        </div>
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2 mb-1">
+            <h2 className="text-lg font-bold text-[var(--color-primary-700)] dark:text-[var(--color-primary-300)] group-hover:text-[var(--color-primary-600)] transition-colors">
+              {t('guide_title')}
+            </h2>
+            <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-[var(--color-primary-500)] text-white">Start here</span>
+          </div>
+          <p className="text-sm text-[var(--color-primary-600)] dark:text-[var(--color-primary-400)] leading-relaxed">
+            {t('guide_desc')}
+          </p>
+        </div>
+        <svg className="w-5 h-5 text-[var(--color-primary-400)] group-hover:translate-x-1 transition-transform shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </Link>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         {sections.map(section => (

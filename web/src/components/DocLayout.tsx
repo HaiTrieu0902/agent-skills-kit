@@ -16,7 +16,7 @@ export default async function DocLayout({ children, locale }: { children: React.
         agents={agents}
         skills={skills}
         workflows={workflows}
-        labels={{ agents: t('agents'), skills: t('skills'), workflows: t('workflows') }}
+        labels={{ agents: t('agents'), skills: t('skills'), workflows: t('workflows'), guide: t('guide') }}
       />
       <main className="flex-1 min-w-0 px-8 py-7">
         {children}

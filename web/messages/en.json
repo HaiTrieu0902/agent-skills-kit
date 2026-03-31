@@ -3,7 +3,8 @@
     "docs": "Documentation",
     "agents": "Agents",
     "skills": "Skills",
-    "workflows": "Workflows"
+    "workflows": "Workflows",
+    "guide": "Getting Started"
   },
   "home": {
     "hero_title": "Raffles IT Kit",
@@ -39,6 +40,8 @@
     "skills_desc": "19 modular skill packs loaded on demand to extend agent capabilities.",
     "workflows_title": "Workflows",
     "workflows_desc": "11 slash command workflows that orchestrate agents and skills for complex tasks.",
+    "guide_title": "Getting Started",
+    "guide_desc": "Learn how to install, activate, and use the kit with real-world examples.",
     "tools": "Tools",
     "model": "Model",
     "skills_used": "Skills",

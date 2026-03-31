@@ -9,7 +9,7 @@ interface Props {
   agents: NavItem[]
   skills: NavItem[]
   workflows: NavItem[]
-  labels: { agents: string; skills: string; workflows: string }
+  labels: { agents: string; skills: string; workflows: string; guide: string }
 }
 
 function ChevronIcon({ open }: { open: boolean }) {
@@ -101,9 +101,31 @@ export default function Sidebar({ locale, agents, skills, workflows, labels }: P
     setOpen(o => ({ ...o, [key]: !o[key] }))
   }
 
+  const guideHref = `/${locale}/docs/guide`
+  const guideActive = pathname === guideHref
+
   return (
     <aside className="w-56 shrink-0 hidden lg:flex flex-col border-r border-[var(--border)]">
       <nav className="sticky top-14 h-[calc(100vh-3.5rem)] overflow-y-auto py-5 pr-3 pl-1">
+        {/* Getting Started link */}
+        <div className="mb-3">
+          <Link
+            href={guideHref}
+            className={`flex items-center gap-2 text-sm px-3 py-2 rounded-md font-medium transition-colors ${
+              guideActive
+                ? 'bg-[var(--color-primary-100)] text-[var(--color-primary-700)] dark:bg-[rgba(30,127,203,0.18)] dark:text-[var(--color-primary-300)]'
+                : 'text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--muted)]'
+            }`}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 8 16 12 12 16"/>
+              <line x1="8" y1="12" x2="16" y2="12"/>
+            </svg>
+            {labels.guide}
+          </Link>
+        </div>
+        <div className="h-px bg-[var(--border)] mb-3" />
         <NavSection
           sectionKey="agents" title={labels.agents}
           sectionHref={`/${locale}/docs/agents`}

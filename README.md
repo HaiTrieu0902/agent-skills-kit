@@ -1,146 +1,217 @@
-# Antigravity Kit
+# Raffles IT Kit
 
-> AI Agent templates with Skills, Agents, and Workflows
+> AI Agent Enhancement Toolkit — specialist agents, skills, and workflows for Claude Code, Cursor, and Windsurf.
 
-<div  align="center">
-    <a href="https://unikorn.vn/p/raffles-it-kit?ref=unikorn" target="_blank"><img src="https://unikorn.vn/api/widgets/badge/raffles-it-kit?theme=dark" alt="Raffles IT Kit - Nổi bật trên Unikorn.vn" style="width: 210px; height: 54px;" width="210" height="54" /></a>
-    <a href="https://unikorn.vn/p/raffles-it-kit?ref=unikorn" target="_blank"><img src="https://unikorn.vn/api/widgets/badge/raffles-it-kit/rank?theme=dark&type=daily" alt="Raffles IT Kit - Hàng ngày" style="width: 250px; height: 64px;" width="250" height="64" /></a>
-    <a href="https://launch.j2team.dev/products/raffles-it-kit" target="_blank"><img src="https://launch.j2team.dev/badge/raffles-it-kit/dark" alt="Raffles IT Kit on J2TEAM Launch" width="250" height="54" /></a>
+<div align="center">
+  <a href="https://github.com/HaiTrieu0902/agent-skills-kit" target="_blank">
+    <img src="https://img.shields.io/github/stars/HaiTrieu0902/agent-skills-kit?style=for-the-badge&logo=github&color=1E7FCB" alt="GitHub Stars" />
+  </a>
+  <a href="https://www.npmjs.com/package/raffles-it-kit" target="_blank">
+    <img src="https://img.shields.io/npm/v/raffles-it-kit?style=for-the-badge&logo=npm&color=1E7FCB" alt="npm version" />
+  </a>
+  <a href="https://opensource.org/licenses/MIT" target="_blank">
+    <img src="https://img.shields.io/badge/License-MIT-1E7FCB?style=for-the-badge" alt="MIT License" />
+  </a>
 </div>
+
+---
 
 ## Quick Install
 
 ```bash
-npx @vudovn/ag-kit init
+npx raffles-it-kit
 ```
 
 Or install globally:
 
 ```bash
-npm install -g @vudovn/ag-kit
-ag-kit init
+npm install -g raffles-it-kit
+raffles-it-kit init
 ```
 
-This installs the `.agent` folder containing all templates into your project.
+This copies the full agent toolkit — `agents/`, `skills/`, `workflows/`, `configs/`, `prompts/`, and `rules/` — directly into your project root.
 
-### ⚠️ Important Note on `.gitignore`
-If you are using AI-powered editors like **Cursor** or **Windsurf**, adding the `.agent/` folder to your `.gitignore` may prevent the IDE from indexing the workflows. This results in slash commands (like `/plan`, `/debug`) not appearing in the chat suggestion dropdown.
-
-**Recommended Solution:**
-To keep the `.agent/` folder local (not tracked by Git) while maintaining AI functionality:
-1. Ensure `.agent/` is **NOT** in your project's `.gitignore`.
-2. Instead, add it to your local exclude file: `.git/info/exclude`
+---
 
 ## What's Included
 
-| Component     | Count | Description                                                        |
-| ------------- | ----- | ------------------------------------------------------------------ |
-| **Agents**    | 20    | Specialist AI personas (frontend, backend, security, PM, QA, etc.) |
-| **Skills**    | 37    | Domain-specific knowledge modules                                  |
-| **Workflows** | 11    | Slash command procedures                                           |
-| **Modern ES** | 2026+ | **Next.js 16 & React 19 Native** (Cache Components, PPR, Proxy)    |
+| Component     | Count | Description                                                          |
+| ------------- | ----- | -------------------------------------------------------------------- |
+| **Agents**    | 19    | Specialist AI personas (frontend, backend, security, PM, QA, etc.)   |
+| **Skills**    | 19    | Modular domain-specific knowledge packs, loaded on demand            |
+| **Workflows** | 11    | Slash command procedures for complex multi-step tasks                |
 
+---
 
-## Usage
+## How to Use
 
-### Using Agents
-
-**No need to mention agents explicitly!** The system automatically detects and applies the right specialist(s):
-
-```
-You: "Add JWT authentication"
-AI: 🤖 Applying @security-auditor + @backend-specialist...
-
-You: "Fix the dark mode button"
-AI: 🤖 Using @frontend-specialist...
-
-You: "Login returns 500 error"
-AI: 🤖 Using @debugger for systematic analysis...
-```
-
-**How it works:**
-
-- Analyzes your request silently
-
-- Detects domain(s) automatically (frontend, backend, security, etc.)
-- Selects the best specialist(s)
-- Informs you which expertise is being applied
-- You get specialist-level responses without needing to know the system architecture
-
-**Benefits:**
-
-- ✅ Zero learning curve - just describe what you need
-- ✅ Always get expert responses
-- ✅ Transparent - shows which agent is being used
-- ✅ Can still override by mentioning agent explicitly
-
-### Using Workflows
-
-Invoke workflows with slash commands:
-
-| Command          | Description                           |
-| ---------------- | ------------------------------------- |
-| `/brainstorm`    | Explore options before implementation |
-| `/create`        | Create new features or apps           |
-| `/debug`         | Systematic debugging                  |
-| `/deploy`        | Deploy application                    |
-| `/enhance`       | Improve existing code                 |
-| `/orchestrate`   | Multi-agent coordination              |
-| `/plan`          | Create task breakdown                 |
-| `/preview`       | Preview changes locally               |
-| `/status`        | Check project status                  |
-| `/test`          | Generate and run tests                |
-| `/ui-ux-pro-max` | Design with 50 styles                 |
-
-Example:
-
-```
-/brainstorm authentication system
-/create landing page with hero section
-/debug why login fails
-```
-
-### Using Skills
-
-Skills are loaded automatically based on task context. The AI reads skill descriptions and applies relevant knowledge.
-
-## CLI Tool
-
-| Command         | Description                               |
-| --------------- | ----------------------------------------- |
-| `ag-kit init`   | Install `.agent` folder into your project |
-| `ag-kit update` | Update to the latest version              |
-| `ag-kit status` | Check installation status                 |
-
-### Options
+### 1. Install the kit
 
 ```bash
-ag-kit init --force        # Overwrite existing .agent folder
-ag-kit init --path ./myapp # Install in specific directory
-ag-kit init --branch dev   # Use specific branch
-ag-kit init --quiet        # Suppress output (for CI/CD)
-ag-kit init --dry-run      # Preview actions without executing
+# Run inside your project root
+npx raffles-it-kit
 ```
+
+### 2. Open in your AI editor
+
+```bash
+# Claude Code
+claude .
+
+# Or open with Cursor / Windsurf — agents are auto-detected from the workspace
+```
+
+### 3. Just describe what you need — no configuration required
+
+Agents are **automatically selected** based on your request. You never need to pick one manually.
+
+```
+You: "Create a responsive product card with Tailwind CSS and dark mode"
+AI: 🤖 Routing to frontend-specialist
+    Loading skills: react-best-practices, tailwind-patterns, frontend-design
+
+You: "Build a JWT auth API with refresh tokens and rate limiting"
+AI: 🤖 Routing to backend-specialist
+    Loading skills: api-patterns, nodejs-best-practices, clean-code
+
+You: "Our login endpoint returns 500 only in production"
+AI: 🤖 Routing to debugger
+    Loading skills: systematic-debugging
+
+You: "Help me prioritize the backlog for our MVP launch in 3 weeks"
+AI: 🤖 Routing to product-owner
+    Loading skills: plan-writing, brainstorming
+```
+
+---
+
+## Agents
+
+| Agent                    | Triggers on…                            |
+| ------------------------ | --------------------------------------- |
+| `orchestrator`           | orchestrate, coordinate, multi-step     |
+| `frontend-specialist`    | component, react, UI, CSS, tailwind     |
+| `backend-specialist`     | backend, server, API, endpoint, auth    |
+| `database-architect`     | database, schema, migration, SQL        |
+| `debugger`               | bug, error, crash, not working, fix     |
+| `devops-engineer`        | deploy, docker, CI/CD, release          |
+| `security-auditor`       | security, vulnerability, OWASP, XSS    |
+| `penetration-tester`     | pentest, exploit, red team, offensive   |
+| `test-engineer`          | test, spec, coverage, jest, playwright  |
+| `qa-automation-engineer` | e2e, automated test, regression         |
+| `performance-optimizer`  | performance, speed, lighthouse, memory  |
+| `explorer-agent`         | explore, audit, analyse repo, map       |
+| `code-archaeologist`     | legacy, refactor, reverse engineer      |
+| `project-planner`        | plan, roadmap, breakdown, milestones    |
+| `product-manager`        | requirements, user story, specs         |
+| `product-owner`          | backlog, MVP, PRD, stakeholder          |
+| `documentation-writer`   | write docs, README, changelog           |
+| `seo-specialist`         | SEO, meta, sitemap, core web vitals     |
+
+---
+
+## Slash Command Workflows
+
+Invoke with `/command` in Claude Code, Cursor, or Windsurf chat:
+
+| Command          | Description                                          | Example                                          |
+| ---------------- | ---------------------------------------------------- | ------------------------------------------------ |
+| `/create`        | Scaffold a new feature end-to-end                    | `/create user auth with Google OAuth`            |
+| `/debug`         | Structured root-cause analysis                       | `/debug payment webhook failing in production`   |
+| `/plan`          | Break a large task into a sprint plan                | `/plan migrate monolith to microservices`        |
+| `/deploy`        | Pre-flight checks → build → deploy → smoke test      | `/deploy to production with zero downtime`       |
+| `/test`          | Generate unit, integration, and E2E tests            | `/test the auth module`                          |
+| `/enhance`       | Improve performance, readability, type safety        | `/enhance the user service class`                |
+| `/brainstorm`    | Socratic discovery for architecture or product ideas | `/brainstorm architecture for real-time chat`    |
+| `/orchestrate`   | Coordinate multiple agents in parallel               | `/orchestrate build a full SaaS billing system`  |
+| `/review`        | Code review: OWASP, performance, conventions         | `/review src/api/payments.ts`                    |
+| `/status`        | Project health: tests, lint, TODOs, security flags   | `/status`                                        |
+| `/ui-ux-pro-max` | Design with 50 UI styles, 21 palettes, 50 fonts      | `/ui-ux-pro-max redesign the dashboard`          |
+
+---
+
+## Skills
+
+Skills are modular knowledge packs. Each agent loads its relevant skills automatically.
+
+| Category            | Skills                                                               |
+| ------------------- | -------------------------------------------------------------------- |
+| **Frontend**        | `react-best-practices`, `tailwind-patterns`, `frontend-design`       |
+| **Backend**         | `api-patterns`, `nodejs-best-practices`, `python-patterns`           |
+| **Database**        | `database-design`                                                    |
+| **Testing**         | `testing-patterns`, `tdd-workflow`, `lint-and-validate`              |
+| **DevOps**          | `bash-linux`, `powershell-windows`                                   |
+| **Architecture**    | `clean-code`, `mcp-builder`                                          |
+| **Security**        | *(loaded by security-auditor and penetration-tester agents)*         |
+| **SEO**             | *(loaded by seo-specialist agent)*                                   |
+
+You can **edit any `SKILL.md`** to add your team's own conventions — every agent that loads that skill will follow them automatically.
+
+---
+
+## CLI Commands
+
+```bash
+npx raffles-it-kit           # Install kit into current directory
+npx raffles-it-kit init      # Same as above
+npx raffles-it-kit list      # List all available agents
+npx raffles-it-kit help      # Show help
+```
+
+---
+
+## Activate in Claude Code
+
+**Project-local** (recommended for teams):
+
+```bash
+# After running npx raffles-it-kit, agents/ is detected automatically
+claude .
+```
+
+**Global** (available across all projects):
+
+```bash
+# macOS / Linux
+cp -r agents/ ~/.claude/agents/
+
+# Windows (PowerShell)
+Copy-Item -Recurse agents\ $env:USERPROFILE\.claude\agents\
+```
+
+### Important: `.gitignore` note
+
+If you use **Cursor** or **Windsurf**, do **not** add `agents/` to `.gitignore` — the IDE won't index the agent definitions and slash commands won't appear in the chat dropdown.
+
+To keep agents local without tracking them in Git, add to `.git/info/exclude` instead:
+
+```
+agents/
+skills/
+workflows/
+```
+
+---
 
 ## Documentation
 
-- **[Web App Example](https://antigravity-kit.unikorn.vn/docs/guide/examples/brainstorm)** - Step-by-step guide to creating a web application
-- **[Online Docs](https://antigravity-kit.unikorn.vn/docs)** - Browse all documentation online
+- **[Getting Started Guide](https://github.com/HaiTrieu0902/agent-skills-kit#readme)** — Installation, activation, and real-world examples
+- **[GitHub Repository](https://github.com/HaiTrieu0902/agent-skills-kit)** — Source code, issues, contributions
 
-## Buy me coffee
+---
 
-<p align="center">
-  <a href="https://buymeacoffee.com/vudovn">
-    <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee" />
-  </a>
-</p>
+## Support This Project
 
-<p align="center"> - or - </p>
+If this toolkit saves you time, consider supporting it:
 
 <p align="center">
-  <img src="https://img.vietqr.io/image/mbbank-0779440918-compact.jpg" alt="Buy me coffee" width="200" />
+  <img src="web/public/qrvcb.jpg" alt="Donate via Vietcombank" width="200" />
+  <br />
+  <em>Scan to donate via VCB — BUI HAI TRIEU · 1017408909</em>
 </p>
+
+---
 
 ## License
 
-MIT © Vudovn
+MIT © trieubh
