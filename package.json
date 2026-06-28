@@ -1,9 +1,9 @@
 {
-  "name": "create-raffles-it",
-  "version": "1.0.2",
+  "name": "create-raffles-it-kit",
+  "version": "1.0.3",
   "description": "AI Agent Enhancement Toolkit — specialist agents, skills, and workflows for Claude Code, Cursor, and Windsurf.",
   "bin": {
-    "create-raffles-it": "bin/index.js"
+    "create-raffles-it-kit": "bin/index.js"
   },
   "files": [
     "agents/",
@@ -12,13 +12,14 @@
     "configs/",
     "prompts/",
     "rules/",
+    "scripts/",
     "bin/",
     "README.md",
     "LICENSE"
   ],
   "scripts": {
     "start": "node bin/index.js",
-    "prepublishOnly": "npm pkg fix && echo '📦 Publishing create-raffles-it to npm...'"
+    "prepublishOnly": "npm pkg fix && echo '📦 Publishing create-raffles-it-kit to npm...'"
   },
   "dependencies": {
     "fs-extra": "^11.2.0",

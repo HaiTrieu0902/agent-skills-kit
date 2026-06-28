@@ -11,3 +11,6 @@ antigravity-doc
 .DS_Store
 *.log
 .npmrc
+
+token.txt
+npm_recovery_codes.txt

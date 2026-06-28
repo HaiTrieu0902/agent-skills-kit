@@ -6,8 +6,8 @@
   <a href="https://raffles-agent-skills-kit.vercel.app/en" target="_blank">
     <img src="https://img.shields.io/badge/Docs-raffles--agent--skills--kit.vercel.app-1E7FCB?style=for-the-badge&logo=vercel&logoColor=white" alt="Documentation" />
   </a>
-  <a href="https://www.npmjs.com/package/create-raffles-it" target="_blank">
-    <img src="https://img.shields.io/npm/v/create-raffles-it?style=for-the-badge&logo=npm&color=1E7FCB" alt="npm version" />
+  <a href="https://www.npmjs.com/package/create-raffles-it-kit" target="_blank">
+    <img src="https://img.shields.io/npm/v/create-raffles-it-kit?style=for-the-badge&logo=npm&color=1E7FCB" alt="npm version" />
   </a>
   <a href="https://github.com/HaiTrieu0902/agent-skills-kit" target="_blank">
     <img src="https://img.shields.io/github/stars/HaiTrieu0902/agent-skills-kit?style=for-the-badge&logo=github&color=1E7FCB" alt="GitHub Stars" />
@@ -22,14 +22,14 @@
 ## Quick Install
 
 ```bash
-npx create-raffles-it
+npx create-raffles-it-kit
 ```
 
 Or install globally:
 
 ```bash
-npm install -g create-raffles-it
-create-raffles-it init
+npm install -g create-raffles-it-kit
+create-raffles-it-kit init
 ```
 
 This copies the full agent toolkit — `agents/`, `skills/`, `workflows/`, `configs/`, `prompts/`, and `rules/` — directly into your project root.
@@ -52,7 +52,7 @@ This copies the full agent toolkit — `agents/`, `skills/`, `workflows/`, `conf
 
 ```bash
 # Run inside your project root
-npx create-raffles-it
+npx create-raffles-it-kit
 ```
 
 ### 2. Open in your AI editor
@@ -155,10 +155,10 @@ You can **edit any `SKILL.md`** to add your team's own conventions — every age
 ## CLI Commands
 
 ```bash
-npx create-raffles-it           # Install kit into current directory
-npx create-raffles-it init      # Same as above
-npx create-raffles-it list      # List all available agents
-npx create-raffles-it help      # Show help
+npx create-raffles-it-kit           # Install kit into current directory
+npx create-raffles-it-kit init      # Same as above
+npx create-raffles-it-kit list      # List all available agents
+npx create-raffles-it-kit help      # Show help
 ```
 
 ---
@@ -168,7 +168,7 @@ npx create-raffles-it help      # Show help
 **Project-local** (recommended for teams):
 
 ```bash
-# After running npx create-raffles-it, agents/ is detected automatically
+# After running npx create-raffles-it-kit, agents/ is detected automatically
 claude .
 ```
 
@@ -200,7 +200,7 @@ workflows/
 
 - **[Official Docs](https://raffles-agent-skills-kit.vercel.app/en)** — Full documentation, guides, agent & skill reference
 - **[Getting Started Guide](https://raffles-agent-skills-kit.vercel.app/en/docs/guide)** — Installation, activation, and real-world examples
-- **[npm Package](https://www.npmjs.com/package/create-raffles-it)** — Package page on npm
+- **[npm Package](https://www.npmjs.com/package/create-raffles-it-kit)** — Package page on npm
 - **[GitHub Repository](https://github.com/HaiTrieu0902/agent-skills-kit)** — Source code, issues, contributions
 
 ---

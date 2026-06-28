@@ -3,7 +3,7 @@
 # Format: https://github.com/HaiTrieu0902/agent-skills-kit
 
 version: "1.0"
-updated: "2025-03-31"
+updated: "2026-06-28"
 
 # ─── Orchestration ──────────────────────────────────────────────────────────
 orchestration:
@@ -14,10 +14,15 @@ orchestration:
 # ─── Agents ─────────────────────────────────────────────────────────────────
 agents:
   - id: orchestrator
-    model: claude-opus-4-6
+    model: claude-opus-4-8
     priority: 0
     description: "Multi-agent coordination. Use for complex tasks spanning multiple domains."
     triggers: [orchestrate, coordinate, multi-step, plan and execute]
+
+  - id: memory-keeper
+    model: claude-sonnet-4-6
+    description: "Persists decisions/preferences/context across sessions; recalls prior context."
+    triggers: [remember, recall, memory, forget, what did we decide, carry over context]
 
   - id: backend-specialist
     model: claude-sonnet-4-6
@@ -75,7 +80,7 @@ agents:
     triggers: [explore, audit, analyze repo, understand, map codebase]
 
   - id: code-archaeologist
-    model: claude-opus-4-6
+    model: claude-opus-4-8
     description: "Legacy code, refactoring, undocumented systems."
     triggers: [legacy, refactor, spaghetti, reverse engineer, modernize]
 

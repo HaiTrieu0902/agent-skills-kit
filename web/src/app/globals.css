@@ -4,16 +4,21 @@
 @variant dark (&:where(.dark, .dark *));
 
 :root {
-  --color-primary-50: #eef7ff;
-  --color-primary-100: #daeffe;
-  --color-primary-200: #b5dffd;
-  --color-primary-300: #74c4fb;
-  --color-primary-400: #4aacf8;
-  --color-primary-500: #1e7fcb;
-  --color-primary-600: #1668a8;
-  --color-primary-700: #0f5085;
-  --color-primary-800: #0c3f69;
-  --color-primary-900: #0a3257;
+  /* Raffles brand palette — bright blue (#0069ba) deepening to navy (#000080) */
+  --color-primary-50: #e6f0f8;
+  --color-primary-100: #cce1f1;
+  --color-primary-200: #99c3e3;
+  --color-primary-300: #66a5d6;
+  --color-primary-400: #3387c8;
+  --color-primary-500: #0069ba;
+  --color-primary-600: #004fac;
+  --color-primary-700: #003599;
+  --color-primary-800: #001a8f;
+  --color-primary-900: #000080;
+
+  /* Accent — Raffles green, used sparingly for highlights */
+  --color-accent-500: #1fba00;
+  --color-accent-600: #199500;
 
   --background: #ffffff;
   --foreground: #18181b;
@@ -45,7 +50,10 @@ html.dark {
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 /* Scrollbar */

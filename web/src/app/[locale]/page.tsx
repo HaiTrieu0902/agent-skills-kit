@@ -37,8 +37,8 @@ function HomePageContent({
     <div>
       {/* Hero section */}
       <section className="relative overflow-hidden border-b border-[var(--border)] bg-gradient-to-br from-[var(--color-primary-50)] to-[var(--background)]">
-        <div className="dark:from-[rgba(30,127,203,0.08)] dark:to-transparent max-w-screen-xl mx-auto px-4 py-20 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium bg-[var(--color-primary-100)] text-[var(--color-primary-700)] dark:bg-[rgba(30,127,203,0.15)] dark:text-[var(--color-primary-300)] mb-6">
+        <div className="dark:from-[rgba(0,105,186,0.08)] dark:to-transparent max-w-screen-xl mx-auto px-4 py-20 text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium bg-[var(--color-primary-100)] text-[var(--color-primary-700)] dark:bg-[rgba(0,105,186,0.15)] dark:text-[var(--color-primary-300)] mb-6">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/>
               <line x1="12" y1="22" x2="12" y2="15.5"/>
@@ -76,7 +76,7 @@ function HomePageContent({
               {t('explore_workflows')}
             </Link>
             <a
-              href="https://www.npmjs.com/package/create-raffles-it"
+              href="https://www.npmjs.com/package/create-raffles-it-kit"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg border border-[var(--border)] text-[var(--foreground)] font-medium hover:bg-[var(--muted)] transition-colors"
@@ -125,8 +125,8 @@ function HomePageContent({
                 <span className="text-xs text-[var(--muted-foreground)] font-mono">terminal</span>
               </div>
               <div className="px-5 py-4 font-mono text-sm">
-                <span className="text-[var(--color-primary-400)] select-none">$ </span>
-                <span className="text-[var(--foreground)]">npx create-raffles-it</span>
+                <span className="text-[var(--color-accent-500)] select-none">$ </span>
+                <span className="text-[var(--foreground)]">npx create-raffles-it-kit</span>
               </div>
             </div>
 
@@ -175,7 +175,7 @@ function HomePageContent({
               className="group block p-5 rounded-xl border border-[var(--card-border)] bg-[var(--card)] hover:border-[var(--color-primary-200)] hover:shadow-sm transition-all"
             >
               <div className="flex items-start gap-3">
-                <div className="w-9 h-9 rounded-lg bg-[var(--color-primary-50)] dark:bg-[rgba(30,127,203,0.15)] flex items-center justify-center shrink-0 text-[var(--color-primary-500)]">
+                <div className="w-9 h-9 rounded-lg bg-[var(--color-primary-50)] dark:bg-[rgba(0,105,186,0.15)] flex items-center justify-center shrink-0 text-[var(--color-primary-500)]">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
                     <circle cx="12" cy="7" r="4"/>
@@ -221,7 +221,7 @@ function HomePageContent({
                 href={`/${locale}/docs/skills/${skill.slug}`}
                 className="group block p-4 rounded-xl border border-[var(--card-border)] bg-[var(--card)] hover:border-[var(--color-primary-200)] hover:shadow-sm transition-all"
               >
-                <div className="w-8 h-8 rounded-lg bg-[var(--color-primary-50)] dark:bg-[rgba(30,127,203,0.15)] flex items-center justify-center mb-3 text-[var(--color-primary-500)]">
+                <div className="w-8 h-8 rounded-lg bg-[var(--color-primary-50)] dark:bg-[rgba(0,105,186,0.15)] flex items-center justify-center mb-3 text-[var(--color-primary-500)]">
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="16 18 22 12 16 6"/>
                     <polyline points="8 6 2 12 8 18"/>
@@ -264,7 +264,7 @@ function HomePageContent({
               href={`/${locale}/docs/workflows/${wf.slug}`}
               className="group block p-4 rounded-xl border border-[var(--card-border)] bg-[var(--card)] hover:border-[var(--color-primary-200)] hover:shadow-sm transition-all text-center"
             >
-              <div className="w-10 h-10 rounded-lg bg-[var(--color-primary-50)] dark:bg-[rgba(30,127,203,0.15)] flex items-center justify-center mx-auto mb-2 text-[var(--color-primary-500)]">
+              <div className="w-10 h-10 rounded-lg bg-[var(--color-primary-50)] dark:bg-[rgba(0,105,186,0.15)] flex items-center justify-center mx-auto mb-2 text-[var(--color-primary-500)]">
                 <span className="text-lg font-bold">/</span>
               </div>
               <p className="text-sm font-medium text-[var(--foreground)] group-hover:text-[var(--color-primary-500)] transition-colors">
@@ -281,7 +281,7 @@ function HomePageContent({
           <p>Raffles IT Kit — AI Agent Enhancement Toolkit</p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://www.npmjs.com/package/create-raffles-it"
+              href="https://www.npmjs.com/package/create-raffles-it-kit"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-(--foreground) transition-colors flex items-center gap-1.5"
@@ -289,7 +289,7 @@ function HomePageContent({
               <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" className="text-red-500">
                 <path d="M0 7.334v8h6.666v1.332H12v-1.332h12v-8H0zm6.666 6.664H5.334v-4H3.999v4H1.335V8.667h5.331v5.331zm4 0v1.336H8.001V8.667h5.334v5.331h-2.669v-.001zm12.001 0h-1.33v-4h-1.336v4h-1.335v-4h-1.33v4h-2.671V8.667h8.002v5.331z"/>
               </svg>
-              npmjs.com/package/create-raffles-it
+              npmjs.com/package/create-raffles-it-kit
             </a>
             <span>·</span>
             <a

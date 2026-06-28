@@ -37,7 +37,7 @@ export default async function WorkflowDetailPage({
 
       {/* Workflow header */}
       <div className="mb-6 flex items-center gap-3">
-        <div className="w-10 h-10 rounded-lg bg-[var(--color-primary-50)] dark:bg-[rgba(30,127,203,0.12)] flex items-center justify-center text-[var(--color-primary-500)] font-bold text-xl">
+        <div className="w-10 h-10 rounded-lg bg-[var(--color-primary-50)] dark:bg-[rgba(0,105,186,0.12)] flex items-center justify-center text-[var(--color-primary-500)] font-bold text-xl">
           /
         </div>
         <div>

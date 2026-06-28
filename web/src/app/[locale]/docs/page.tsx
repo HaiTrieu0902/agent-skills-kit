@@ -84,7 +84,7 @@ function DocsIndex({
       {/* Getting Started — featured card */}
       <Link
         href={`/${locale}/docs/guide`}
-        className="group flex items-center gap-5 p-6 rounded-xl border-2 border-[var(--color-primary-200)] dark:border-[rgba(30,127,203,0.4)] bg-[var(--color-primary-50)] dark:bg-[rgba(30,127,203,0.07)] hover:border-[var(--color-primary-400)] hover:shadow-md transition-all mb-8"
+        className="group flex items-center gap-5 p-6 rounded-xl border-2 border-[var(--color-primary-200)] dark:border-[rgba(0,105,186,0.4)] bg-[var(--color-primary-50)] dark:bg-[rgba(0,105,186,0.07)] hover:border-[var(--color-primary-400)] hover:shadow-md transition-all mb-8"
       >
         <div className="w-14 h-14 rounded-xl bg-[var(--color-primary-500)] flex items-center justify-center shrink-0 text-white">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -116,14 +116,14 @@ function DocsIndex({
             href={section.href}
             className="group block p-6 rounded-xl border border-[var(--card-border)] bg-[var(--card)] hover:border-[var(--color-primary-300)] hover:shadow-md transition-all"
           >
-            <div className="w-12 h-12 rounded-xl bg-[var(--color-primary-50)] dark:bg-[rgba(30,127,203,0.15)] flex items-center justify-center mb-4 text-[var(--color-primary-500)] group-hover:bg-[var(--color-primary-100)] transition-colors">
+            <div className="w-12 h-12 rounded-xl bg-[var(--color-primary-50)] dark:bg-[rgba(0,105,186,0.15)] flex items-center justify-center mb-4 text-[var(--color-primary-500)] group-hover:bg-[var(--color-primary-100)] transition-colors">
               {section.icon}
             </div>
             <div className="flex items-baseline gap-2 mb-2">
               <h2 className="text-xl font-semibold text-[var(--foreground)] group-hover:text-[var(--color-primary-500)] transition-colors">
                 {section.title}
               </h2>
-              <span className="text-sm font-medium text-[var(--color-primary-500)] bg-[var(--color-primary-50)] dark:bg-[rgba(30,127,203,0.15)] px-2 py-0.5 rounded-full">
+              <span className="text-sm font-medium text-[var(--color-primary-500)] bg-[var(--color-primary-50)] dark:bg-[rgba(0,105,186,0.15)] px-2 py-0.5 rounded-full">
                 {section.count}
               </span>
             </div>

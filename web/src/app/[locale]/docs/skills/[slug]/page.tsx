@@ -38,7 +38,7 @@ export default async function SkillDetailPage({
 
       {/* Description callout (if different from content) */}
       {skill.description && (
-        <div className="mb-6 px-4 py-3 rounded-lg border-l-4 border-[var(--color-primary-500)] bg-[var(--color-primary-50)] dark:bg-[rgba(30,127,203,0.08)]">
+        <div className="mb-6 px-4 py-3 rounded-lg border-l-4 border-[var(--color-primary-500)] bg-[var(--color-primary-50)] dark:bg-[rgba(0,105,186,0.08)]">
           <p className="text-sm text-[var(--foreground)] leading-relaxed">{skill.description}</p>
         </div>
       )}

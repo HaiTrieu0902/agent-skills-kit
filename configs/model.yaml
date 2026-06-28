@@ -1,4 +1,4 @@
-# Model configuration for Antigravity Kit agents
+# Model configuration for Raffles IT Kit agents
 
 defaults:
   model: claude-sonnet-4-6
@@ -7,13 +7,15 @@ defaults:
 
 overrides:
   orchestrator:
-    model: claude-opus-4-6
+    model: claude-opus-4-8
   code-archaeologist:
-    model: claude-opus-4-6
+    model: claude-opus-4-8
 
 available_models:
-  - id: claude-opus-4-6
-    description: Most capable — use for complex orchestration
+  - id: claude-fable-5
+    description: Newest-generation model
+  - id: claude-opus-4-8
+    description: Most capable — complex orchestration and deep reasoning
   - id: claude-sonnet-4-6
     description: Balanced — default for most agents
   - id: claude-haiku-4-5-20251001

@@ -40,7 +40,7 @@ function NavSection({
   return (
     <div className="mb-1">
       {/* Section header row: label links to listing page, chevron toggles collapse */}
-      <div className={`flex items-center justify-between rounded-md mb-0.5 group ${sectionActive ? 'bg-[var(--color-primary-50)] dark:bg-[rgba(30,127,203,0.1)]' : ''}`}>
+      <div className={`flex items-center justify-between rounded-md mb-0.5 group ${sectionActive ? 'bg-[var(--color-primary-50)] dark:bg-[rgba(0,105,186,0.1)]' : ''}`}>
         <Link
           href={sectionHref}
           className={`flex-1 px-2 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors ${
@@ -75,7 +75,7 @@ function NavSection({
                   href={href}
                   className={`flex items-center gap-2 text-sm px-3 py-1.5 rounded-md transition-colors ${
                     active
-                      ? 'bg-[var(--color-primary-100)] text-[var(--color-primary-700)] font-medium dark:bg-[rgba(30,127,203,0.18)] dark:text-[var(--color-primary-300)]'
+                      ? 'bg-[var(--color-primary-100)] text-[var(--color-primary-700)] font-medium dark:bg-[rgba(0,105,186,0.18)] dark:text-[var(--color-primary-300)]'
                       : 'text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--muted)]'
                   }`}
                 >
@@ -113,7 +113,7 @@ export default function Sidebar({ locale, agents, skills, workflows, labels }: P
             href={guideHref}
             className={`flex items-center gap-2 text-sm px-3 py-2 rounded-md font-medium transition-colors ${
               guideActive
-                ? 'bg-[var(--color-primary-100)] text-[var(--color-primary-700)] dark:bg-[rgba(30,127,203,0.18)] dark:text-[var(--color-primary-300)]'
+                ? 'bg-[var(--color-primary-100)] text-[var(--color-primary-700)] dark:bg-[rgba(0,105,186,0.18)] dark:text-[var(--color-primary-300)]'
                 : 'text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--muted)]'
             }`}
           >

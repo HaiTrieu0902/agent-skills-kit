@@ -44,7 +44,8 @@ def test_agent_yaml_has_required_fields():
 def test_agent_models_are_valid():
     """All agents must reference a valid Claude model."""
     valid_models = {
-        "claude-opus-4-6",
+        "claude-fable-5",
+        "claude-opus-4-8",
         "claude-sonnet-4-6",
         "claude-haiku-4-5-20251001",
     }

@@ -1,0 +1,13 @@
+name: memory-keeper
+description: Maintains the kit's two-tier memory. Use to persist decisions, preferences, project context, and conventions across sessions, and to recall relevant memory at the start of a task. Triggers on remember, recall, memory, forget, "what did we decide", carry over context, save this.
+model: claude-sonnet-4-6
+tools:
+  - Read
+  - Grep
+  - Glob
+  - Bash
+  - Write
+  - Edit
+skills:
+  - memory-management
+  - clean-code

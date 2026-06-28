@@ -11,12 +11,12 @@ function generatePackageJson(targetDir, projectName) {
   const content = {
     name: safeName,
     version: '1.0.0',
-    description: `AI agent project scaffolded with create-raffles-it`,
+    description: `AI agent project scaffolded with create-raffles-it-kit`,
     scripts: {
       start: 'echo "Add your start script here"',
       dev:   'echo "Add your dev script here"',
     },
-    keywords: ['ai', 'agents', 'claude', 'create-raffles-it'],
+    keywords: ['ai', 'agents', 'claude', 'create-raffles-it-kit'],
     license: 'MIT',
   }
   fs.writeJsonSync(path.join(targetDir, 'package.json'), content, { spaces: 2 })
@@ -84,7 +84,7 @@ AI:  Routing to debugger...
 
 - [Documentation](https://raffles-agent-skills-kit.vercel.app/en)
 - [Getting Started Guide](https://raffles-agent-skills-kit.vercel.app/en/docs/guide)
-- [npm Package](https://www.npmjs.com/package/create-raffles-it)
+- [npm Package](https://www.npmjs.com/package/create-raffles-it-kit)
 - [GitHub](https://github.com/HaiTrieu0902/agent-skills-kit)
 `
   fs.writeFileSync(path.join(targetDir, 'README.md'), content)

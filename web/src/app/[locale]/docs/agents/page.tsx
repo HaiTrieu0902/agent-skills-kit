@@ -76,7 +76,7 @@ function ModelBadge({ model }: { model: string }) {
       className={`shrink-0 text-xs px-2 py-0.5 rounded-full font-medium whitespace-nowrap ${
         isOpus
           ? 'bg-purple-50 text-purple-700 dark:bg-[rgba(168,85,247,0.15)] dark:text-purple-300'
-          : 'bg-[var(--color-primary-50)] text-[var(--color-primary-700)] dark:bg-[rgba(30,127,203,0.15)] dark:text-[var(--color-primary-300)]'
+          : 'bg-[var(--color-primary-50)] text-[var(--color-primary-700)] dark:bg-[rgba(0,105,186,0.15)] dark:text-[var(--color-primary-300)]'
       }`}
     >
       {isOpus ? 'Opus 4.6' : 'Sonnet 4.6'}

@@ -126,7 +126,7 @@ function GuideContent({ locale }: { locale: string }) {
           <p className="text-[var(--muted-foreground)] mb-4 leading-relaxed">
             Run the following command inside your project root. The kit copies <strong>agents/</strong>, <strong>skills/</strong>, <strong>workflows/</strong>, <strong>configs/</strong>, <strong>prompts/</strong>, and <strong>rules/</strong> directly into your working directory.
           </p>
-          <Code lang="terminal">npx create-raffles-it</Code>
+          <Code lang="terminal">npx create-raffles-it-kit</Code>
           <p className="text-sm text-[var(--muted-foreground)] mt-2">
             No global install needed. Every time you run it, the latest kit is fetched from npm.
           </p>
@@ -168,7 +168,7 @@ function GuideContent({ locale }: { locale: string }) {
               <p className="text-sm text-[var(--muted-foreground)] mb-3">
                 Leave the <code className="bg-[var(--muted)] px-1 rounded text-xs">agents/</code> folder in your project root. Claude Code detects it automatically when you open the project.
               </p>
-              <Code lang="terminal">{`# After running npx create-raffles-it, just open the project:
+              <Code lang="terminal">{`# After running npx create-raffles-it-kit, just open the project:
 claude .`}</Code>
               <p className="text-xs text-[var(--muted-foreground)]">
                 Agents are scoped to this project only.
@@ -389,7 +389,7 @@ skills:
             </div>
           </div>
 
-          <div className="mt-6 p-4 rounded-lg border border-[var(--color-primary-200)] dark:border-[rgba(30,127,203,0.3)] bg-[var(--color-primary-50)] dark:bg-[rgba(30,127,203,0.07)] text-sm text-[var(--muted-foreground)]">
+          <div className="mt-6 p-4 rounded-lg border border-[var(--color-primary-200)] dark:border-[rgba(0,105,186,0.3)] bg-[var(--color-primary-50)] dark:bg-[rgba(0,105,186,0.07)] text-sm text-[var(--muted-foreground)]">
             <strong className="text-[var(--foreground)]">Pro tip:</strong> You can edit <code className="bg-[var(--muted)] px-1 rounded text-xs">skills/react-best-practices/SKILL.md</code> to add your team&apos;s own conventions. Every agent that loads that skill will follow them automatically.
           </div>
         </Section>
@@ -416,7 +416,7 @@ skills:
             ].map(wf => (
               <div key={wf.cmd} className="rounded-xl border border-[var(--card-border)] bg-[var(--card)] p-4">
                 <div className="flex items-start gap-3">
-                  <div className="w-9 h-9 rounded-lg bg-[var(--color-primary-50)] dark:bg-[rgba(30,127,203,0.15)] flex items-center justify-center shrink-0 text-[var(--color-primary-600)] font-bold text-lg">
+                  <div className="w-9 h-9 rounded-lg bg-[var(--color-primary-50)] dark:bg-[rgba(0,105,186,0.15)] flex items-center justify-center shrink-0 text-[var(--color-primary-600)] font-bold text-lg">
                     /
                   </div>
                   <div className="min-w-0">

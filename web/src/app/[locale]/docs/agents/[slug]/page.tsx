@@ -57,7 +57,7 @@ export default async function AgentDetailPage({
                 className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium ${
                   isOpus
                     ? 'bg-purple-50 text-purple-700 dark:bg-[rgba(168,85,247,0.15)] dark:text-purple-300'
-                    : 'bg-[var(--color-primary-50)] text-[var(--color-primary-700)] dark:bg-[rgba(30,127,203,0.15)] dark:text-[var(--color-primary-300)]'
+                    : 'bg-[var(--color-primary-50)] text-[var(--color-primary-700)] dark:bg-[rgba(0,105,186,0.15)] dark:text-[var(--color-primary-300)]'
                 }`}
               >
                 <span className={`w-1.5 h-1.5 rounded-full ${isOpus ? 'bg-purple-500' : 'bg-[var(--color-primary-500)]'}`} />

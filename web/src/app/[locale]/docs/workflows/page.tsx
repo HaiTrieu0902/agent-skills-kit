@@ -38,7 +38,7 @@ export default async function WorkflowsPage({
             href={`/${locale}/docs/workflows/${wf.slug}`}
             className="group flex items-start gap-4 p-5 rounded-xl border border-[var(--card-border)] bg-[var(--card)] hover:border-[var(--color-primary-300)] hover:shadow-sm transition-all"
           >
-            <div className="w-11 h-11 rounded-lg bg-[var(--color-primary-50)] dark:bg-[rgba(30,127,203,0.12)] flex items-center justify-center shrink-0 text-[var(--color-primary-500)] font-bold text-lg">
+            <div className="w-11 h-11 rounded-lg bg-[var(--color-primary-50)] dark:bg-[rgba(0,105,186,0.12)] flex items-center justify-center shrink-0 text-[var(--color-primary-500)] font-bold text-lg">
               /
             </div>
             <div className="min-w-0">
