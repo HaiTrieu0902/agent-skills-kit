@@ -9,7 +9,7 @@
   "home": {
     "hero_title": "Raffles IT Kit",
     "hero_subtitle": "AI Agent Enhancement Toolkit",
-    "hero_description": "19 specialist agents, 19 domain-specific skills, and 11 slash command workflows — extending AI coding assistants with reusable intelligence.",
+    "hero_description": "22 specialist agents, 25 domain-specific skills, and 12 slash command workflows — extending AI coding assistants with reusable intelligence.",
     "explore_agents": "Explore Agents",
     "explore_skills": "Explore Skills",
     "explore_workflows": "Explore Workflows",
@@ -35,11 +35,11 @@
   },
   "docs": {
     "agents_title": "Agents",
-    "agents_desc": "19 specialist agent personas. Each agent is automatically selected based on task type.",
+    "agents_desc": "22 specialist agent personas. Each agent is automatically selected based on task type.",
     "skills_title": "Skills",
-    "skills_desc": "19 modular skill packs loaded on demand to extend agent capabilities.",
+    "skills_desc": "25 modular skill packs loaded on demand to extend agent capabilities.",
     "workflows_title": "Workflows",
-    "workflows_desc": "11 slash command workflows that orchestrate agents and skills for complex tasks.",
+    "workflows_desc": "12 slash command workflows that orchestrate agents and skills for complex tasks.",
     "guide_title": "Getting Started",
     "guide_desc": "Learn how to install, activate, and use the kit with real-world examples.",
     "tools": "Tools",

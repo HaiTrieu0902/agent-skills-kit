@@ -4,11 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**Raffles IT Kit** is an AI Agent Enhancement Toolkit that extends AI coding assistants with 19 specialist agents, 25 domain-specific skills, and 12 slash command workflows. The system auto-routes tasks to relevant specialists and provides validation scripts for quality assurance.
+**Raffles IT Kit** is an AI Agent Enhancement Toolkit that extends AI coding assistants with 22 specialist agents, 25 domain-specific skills, and 12 slash command workflows. The system auto-routes tasks to relevant specialists and provides validation scripts for quality assurance.
 
 ## Repository Structure
 
-- `agents/` — 19 specialist agents, each with `agent.yaml` (Claude format) + `prompt.md`
+- `agents/` — 22 specialist agents, each with `agent.yaml` (Claude format) + `prompt.md`
 - `skills/` — 25 skill modules, each with `SKILL.md` and optional `scripts/`
 - `workflows/` — 12 slash command workflow definitions
 - `scripts/` — Python validation scripts
@@ -17,6 +17,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `configs/` — Model and runtime configuration (`model.yaml`, `runtime.yaml`, `mcp_config.json`)
 - `prompts/` — Shared prompt templates (`system.md`, `planning.md`, `reflection.md`)
 - `memory/` — Two-tier memory: `short_term.json` (session) + `long_term.json` (durable), indexed by `MEMORY.md`, managed by `scripts/memory_manager.py`
+- `docs/` — Team guides (e.g., `PLUGINS.md` — how to use and add Claude Code plugins)
 - `tests/` — Validation tests for agents and skills
 
 ## Web App Commands
@@ -54,7 +55,7 @@ The documentation site uses:
 
 A Markdown-based configuration system — agents, skills, and workflows are `.md` files that define behavior, not code. Key concepts:
 
-- **Agents** (`agents/`) are personas with domain expertise (e.g., `frontend-specialist`, `security-auditor`, `orchestrator`). Each has an `agent.yaml` (Claude format with model + tools) and a `prompt.md` (system prompt). Auto-selected based on task type.
+- **Agents** (`agents/`) are personas with domain expertise (e.g., `frontend-specialist`, `security-auditor`, `ai-engineer`, `data-engineer`, `orchestrator`). Each has an `agent.yaml` (Claude format with model + tools) and a `prompt.md` (system prompt). Auto-selected based on task type. Model tiers are set in `configs/model.yaml`: complex reasoning/orchestration agents run on `claude-opus-4-8`, the rest default to `claude-sonnet-4-6` (`claude-fable-5` and `claude-haiku-4-5` are also registered).
 - **Skills** (`skills/`) are modular capability packs loaded on demand. Each skill directory contains a `SKILL.md` with instructions and optionally `scripts/` for automation.
 - **Workflows** (`workflows/`) are slash commands (e.g., `/create`, `/debug`, `/deploy`) that orchestrate agents and skills for complex tasks.
 - **Shared assets** (`.shared/`) contain design system datasets and UI/UX reference data.

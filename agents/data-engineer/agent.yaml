@@ -1,0 +1,14 @@
+name: data-engineer
+description: Designs and builds data pipelines and analytics infrastructure — ELT, ingestion, transformation, orchestration, warehouse/lakehouse modeling, and data quality. Use for data platform, data warehouse, data mart, and BI/analytics data work. Triggers on pipeline, etl, elt, warehouse, data mart, dbt, airflow, dagster, ingestion, lakehouse, data quality, star schema.
+model: claude-opus-4-8
+tools:
+  - Read
+  - Grep
+  - Glob
+  - Bash
+  - Write
+  - Edit
+skills:
+  - data-engineering
+  - database-design
+  - clean-code

@@ -22,7 +22,9 @@ This project enables six plugins, all from the official marketplace
     "pr-review-toolkit@claude-plugins-official": true,
     "serena@claude-plugins-official": true,
     "figma@claude-plugins-official": true,
-    "pyright-lsp@claude-plugins-official": true
+    "pyright-lsp@claude-plugins-official": true,
+    "context7@claude-plugins-official": true,
+    "playwright@claude-plugins-official": true
   }
 }
 ```
@@ -35,6 +37,8 @@ This project enables six plugins, all from the official marketplace
 | `pyright-lsp` | Python type-checking & diagnostics while editing | LSP integration |
 | `figma` | Figma ↔ code: read designs, generate UI, diagrams | Skills + MCP tools |
 | `ralph-loop` | Run a task on an autonomous repeating loop | Slash commands |
+| `context7` | Fetch up-to-date library/framework docs on demand | MCP server |
+| `playwright` | Drive a real browser — navigate, click, screenshot, E2E test | MCP server |
 
 ---
 
@@ -107,6 +111,25 @@ Useful for the kit's docs/UI work — e.g. mocking the site redesign before codi
 
 Use for long, repetitive grinds (e.g. "fix every failing test, one by one").
 Supervise it — it keeps going on its own.
+
+### context7 — current library docs
+
+Runs as an MCP server that fetches **up-to-date documentation** for a library,
+framework, SDK, or CLI on demand — even for well-known ones — so Claude doesn't
+answer library questions from stale training data. You don't call it directly;
+Claude uses it automatically when you ask about a library's API, config, setup,
+or version migration. Especially useful for fast-moving deps (Next.js, Tailwind,
+the AI SDK, etc.). Just ask in plain language, e.g. *"how do I configure Cache
+Components in the latest Next.js?"*
+
+### playwright — browser automation & E2E
+
+Runs as an MCP server that drives a **real browser** — navigate, click, type,
+fill forms, screenshot, read the page, run E2E checks. Claude uses it when a task
+needs to verify something in a live UI or automate the browser. Pairs naturally
+with the `qa-automation-engineer` agent and the `webapp-testing` skill. Examples:
+*"open the docs site locally and screenshot the homepage in dark mode"*,
+*"click through the install flow and confirm each step renders."*
 
 ---
 

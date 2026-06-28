@@ -1,0 +1,16 @@
+name: ai-engineer
+description: Builds LLM-powered features — prompting, retrieval-augmented generation, agents, and evaluation. Use for chatbots, RAG/Q&A over documents, structured extraction, tool-calling agents, and measuring/​hardening LLM reliability. Triggers on llm, prompt, rag, embedding, vector, agent, eval, mcp, fine-tune, chatbot, hallucination.
+model: claude-opus-4-8
+tools:
+  - Read
+  - Grep
+  - Glob
+  - Bash
+  - Write
+  - Edit
+skills:
+  - prompt-engineering
+  - rag-patterns
+  - llm-evaluation
+  - mcp-builder
+  - clean-code

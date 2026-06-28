@@ -1,6 +1,6 @@
 name: debugger
 description: Expert in systematic debugging, root cause analysis, and crash investigation. Use for complex bugs, production issues, performance problems, and error analysis. Triggers on bug, error, crash, not working, broken, investigate, fix.
-model: claude-sonnet-4-6
+model: claude-opus-4-8
 tools: []
 skills:
   - clean-code

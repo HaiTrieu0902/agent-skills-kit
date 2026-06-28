@@ -10,6 +10,18 @@ overrides:
     model: claude-opus-4-8
   code-archaeologist:
     model: claude-opus-4-8
+  security-auditor:
+    model: claude-opus-4-8
+  database-architect:
+    model: claude-opus-4-8
+  debugger:
+    model: claude-opus-4-8
+  project-planner:
+    model: claude-opus-4-8
+  ai-engineer:
+    model: claude-opus-4-8
+  data-engineer:
+    model: claude-opus-4-8
 
 available_models:
   - id: claude-fable-5

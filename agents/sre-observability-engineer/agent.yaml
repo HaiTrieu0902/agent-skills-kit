@@ -1,0 +1,14 @@
+name: sre-observability-engineer
+description: Instruments services for production observability and reliability — structured logging, metrics, distributed tracing (OpenTelemetry), SLOs, and actionable alerting. Use to make a system debuggable in production or to set up monitoring. Triggers on observability, logging, metrics, tracing, opentelemetry, slo, sli, alerting, monitoring, incident.
+model: claude-sonnet-4-6
+tools:
+  - Read
+  - Grep
+  - Glob
+  - Bash
+  - Write
+  - Edit
+skills:
+  - observability
+  - systematic-debugging
+  - clean-code

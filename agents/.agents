@@ -35,12 +35,12 @@ agents:
     triggers: [component, react, vue, ui, ux, css, tailwind, responsive, frontend]
 
   - id: database-architect
-    model: claude-sonnet-4-6
+    model: claude-opus-4-8
     description: "Schema design, query optimization, migrations, ORMs."
     triggers: [database, sql, schema, migration, query, postgres, sqlite, index]
 
   - id: debugger
-    model: claude-sonnet-4-6
+    model: claude-opus-4-8
     description: "Systematic debugging and root cause analysis."
     triggers: [bug, error, crash, not working, broken, investigate, fix]
 
@@ -50,7 +50,7 @@ agents:
     triggers: [deploy, production, server, docker, ci/cd, release, rollback]
 
   - id: security-auditor
-    model: claude-sonnet-4-6
+    model: claude-opus-4-8
     description: "OWASP, vulnerability scanning, zero-trust architecture."
     triggers: [security, vulnerability, owasp, xss, injection, encrypt]
 
@@ -85,7 +85,7 @@ agents:
     triggers: [legacy, refactor, spaghetti, reverse engineer, modernize]
 
   - id: project-planner
-    model: claude-sonnet-4-6
+    model: claude-opus-4-8
     description: "Task breakdown, dependency graphs, feature planning."
     triggers: [plan, roadmap, breakdown, milestones, new project]
 
@@ -108,3 +108,18 @@ agents:
     model: claude-sonnet-4-6
     description: "SEO audits, Core Web Vitals, AI search (GEO)."
     triggers: [seo, meta, sitemap, core web vitals, search ranking]
+
+  - id: ai-engineer
+    model: claude-opus-4-8
+    description: "LLM/RAG/agent applications — prompts, retrieval, evals, MCP."
+    triggers: [llm, prompt, rag, embedding, vector, agent, eval, mcp, fine-tune, chatbot]
+
+  - id: data-engineer
+    model: claude-opus-4-8
+    description: "Data pipelines, ELT, warehouse/lakehouse modeling, data quality."
+    triggers: [pipeline, etl, elt, warehouse, data mart, dbt, airflow, ingestion, lakehouse, data quality]
+
+  - id: sre-observability-engineer
+    model: claude-sonnet-4-6
+    description: "Observability — logging, metrics, tracing, SLOs, alerting."
+    triggers: [observability, logging, metrics, tracing, opentelemetry, slo, alerting, monitoring]
