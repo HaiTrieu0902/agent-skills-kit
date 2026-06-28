@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
-import { getAllAgents, getAllSkills, getAllWorkflows } from '@/lib/content'
+import { getAllAgents, getAllSkills, getAllWorkflows, modelLabel } from '@/lib/content'
 
 export default async function HomePage({
   params
@@ -16,13 +16,6 @@ export default async function HomePage({
   const workflows = getAllWorkflows()
 
   return <HomePageContent locale={locale} agents={agents} skills={skills} workflows={workflows} />
-}
-
-function modelLabel(model: string): string {
-  if (model.includes('fable')) return 'fable 5'
-  if (model.includes('opus')) return 'opus 4.8'
-  if (model.includes('haiku')) return 'haiku 4.5'
-  return 'sonnet 4.6'
 }
 
 function HomePageContent({

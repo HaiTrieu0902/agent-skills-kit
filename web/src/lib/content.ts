@@ -5,6 +5,19 @@ import yaml from 'js-yaml'
 
 const ROOT = path.join(process.cwd(), '..')
 
+/** Short display label for a Claude model id (e.g. "Opus 4.8"). */
+export function modelLabel(model: string): string {
+  if (model.includes('fable')) return 'Fable 5'
+  if (model.includes('opus')) return 'Opus 4.8'
+  if (model.includes('haiku')) return 'Haiku 4.5'
+  return 'Sonnet 4.6'
+}
+
+/** Premium tiers get the accent (purple) badge treatment. */
+export function isPremiumModel(model: string): boolean {
+  return model.includes('opus') || model.includes('fable')
+}
+
 export interface AgentMeta {
   slug: string
   name: string

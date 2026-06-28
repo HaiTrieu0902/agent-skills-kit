@@ -442,7 +442,7 @@ skills:
               { label: 'Call an agent directly', example: 'Act as the product-owner agent and help me write user stories for the notifications feature' },
               { label: 'Request a specific skill', example: 'Using the database-design skill, review this Prisma schema for normalization issues' },
               { label: 'Run a workflow explicitly', example: '/orchestrate — I need a frontend-specialist and backend-specialist to build a real-time chat feature together' },
-              { label: 'Override the model', example: 'Use the orchestrator agent with Opus 4 to plan this migration strategy end-to-end' },
+              { label: 'Override the model', example: 'Use the orchestrator agent with Opus 4.8 to plan this migration strategy end-to-end' },
             ].map(item => (
               <div key={item.label} className="rounded-lg border border-[var(--card-border)] bg-[var(--card)] p-4">
                 <p className="text-xs font-semibold text-[var(--muted-foreground)] uppercase tracking-wider mb-2">{item.label}</p>

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { setRequestLocale, getTranslations } from 'next-intl/server'
-import { getAllAgents } from '@/lib/content'
+import { getAllAgents, modelLabel, isPremiumModel } from '@/lib/content'
 
 export default async function AgentsPage({
   params
@@ -70,16 +70,16 @@ export default async function AgentsPage({
 }
 
 function ModelBadge({ model }: { model: string }) {
-  const isOpus = model.includes('opus')
+  const premium = isPremiumModel(model)
   return (
     <span
       className={`shrink-0 text-xs px-2 py-0.5 rounded-full font-medium whitespace-nowrap ${
-        isOpus
+        premium
           ? 'bg-purple-50 text-purple-700 dark:bg-[rgba(168,85,247,0.15)] dark:text-purple-300'
           : 'bg-[var(--color-primary-50)] text-[var(--color-primary-700)] dark:bg-[rgba(0,105,186,0.15)] dark:text-[var(--color-primary-300)]'
       }`}
     >
-      {isOpus ? 'Opus 4.6' : 'Sonnet 4.6'}
+      {modelLabel(model)}
     </span>
   )
 }

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { setRequestLocale, getTranslations } from 'next-intl/server'
-import { getAllAgents, getAgent } from '@/lib/content'
+import { getAllAgents, getAgent, modelLabel, isPremiumModel } from '@/lib/content'
 import ContentRenderer from '@/components/ContentRenderer'
 
 export async function generateStaticParams() {
@@ -21,7 +21,7 @@ export default async function AgentDetailPage({
 
   if (!agent) notFound()
 
-  const isOpus = agent.model.includes('opus')
+  const premium = isPremiumModel(agent.model)
 
   return (
     <div>
@@ -55,13 +55,13 @@ export default async function AgentDetailPage({
               </p>
               <span
                 className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium ${
-                  isOpus
+                  premium
                     ? 'bg-purple-50 text-purple-700 dark:bg-[rgba(168,85,247,0.15)] dark:text-purple-300'
                     : 'bg-[var(--color-primary-50)] text-[var(--color-primary-700)] dark:bg-[rgba(0,105,186,0.15)] dark:text-[var(--color-primary-300)]'
                 }`}
               >
-                <span className={`w-1.5 h-1.5 rounded-full ${isOpus ? 'bg-purple-500' : 'bg-[var(--color-primary-500)]'}`} />
-                {isOpus ? 'Opus 4.6' : 'Sonnet 4.6'}
+                <span className={`w-1.5 h-1.5 rounded-full ${premium ? 'bg-purple-500' : 'bg-[var(--color-primary-500)]'}`} />
+                {modelLabel(agent.model)}
               </span>
             </div>
 
